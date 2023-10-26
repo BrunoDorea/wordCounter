@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <!-- FAVICON -->
+    <link rel='shortcut icon' href='./src/images/favicon.png' type='image/png' />
+    <!-- CSS -->
+    <link rel='stylesheet' href='./src/css/style.css' />
+    <!-- JAVASCRIPT -->
+    <script defer src='./src/js/main.js'></script>
+    <title>Contador de Palavras | Bruno Dórea</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- GOOGLE TAG (gtag.js) -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-TJQ2XJZPTD' ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-TJQ2XJZPTD');
+    </script>
+  </head>
+  <body>
+    <div class="container">
+        <textarea placeholder="Digite o texto aqui..."></textarea>
+        <div class="output-container">
+            <div class="output">
+                <p class="words">Palavras</p>
+                <span data-word-count>0</span>
+            </div>
+            <div class="output">
+                <p class="characters">Caracteres</p>
+                <span data-character-count>0</span>
+            </div>
+            <div class="output">
+                <p class="sentences">Frases</p>
+                <span data-sentence-count>0</span>
+            </div>
+            <div class="output">
+                <p class="paragraph">Paragrafos</p>
+                <span data-paragraph-count>0</span>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
